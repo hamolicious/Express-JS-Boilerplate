@@ -1,3 +1,5 @@
 export default function Index(req, res) {
-  res.send('Hello World');
+  res.send({
+    status: 200,
+  });
 }
