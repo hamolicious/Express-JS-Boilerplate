@@ -1,0 +1,51 @@
+{
+	"extends": [
+		"airbnb-base",
+		"prettier"
+	],
+	"env": {
+		"mocha": true
+	},
+	"plugins": [
+		"mocha",
+		"prettier"
+	],
+	"rules": {
+		"import/extensions": "off",
+		"import/prefer-default-export": "off",
+		"no-debugger": "error",
+		"no-unused-expressions": "off",
+		"import/no-extraneous-dependencies": [
+			"error",
+			{
+				"devDependencies": true
+			}
+		],
+		"strict": [
+			"error",
+			"safe"
+		],
+		"mocha/no-exclusive-tests": "error",
+		"mocha/no-pending-tests": "error",
+		"prettier/prettier": "error",
+		"no-underscore-dangle": [
+			"error",
+			{
+				"allow": [
+					"_id"
+				]
+			}
+		],
+		"object-curly-newline": "off",
+		"max-len": [
+			"error",
+			{
+				"code": 120,
+				"tabWidth": 2,
+				"ignoreComments": true,
+				"ignoreStrings": true,
+				"ignoreTemplateLiterals": true
+			}
+		]
+	}
+}

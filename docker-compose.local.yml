@@ -1,0 +1,21 @@
+services:
+  db_handler:
+    depends_on:
+      - db
+    networks:
+    - local_network
+
+  db:
+    image: mongo
+    container_name: mongo
+    ports:
+      - 8081:8081
+    volumes:
+      - "./temp/db_dat/:/data/db"
+    networks:
+      - local_network
+
+networks:
+  local_network:
+    driver: bridge
+

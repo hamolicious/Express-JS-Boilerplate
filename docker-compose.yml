@@ -1,0 +1,6 @@
+services:
+  db_handler:
+    build: .
+    container_name: DB-Handler
+    ports:
+      - "80:3000"
